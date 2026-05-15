@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LD Portfolio</title>
+    <meta name="description" content="BI Developer, Medium writer and data storyteller portfolio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <a href="#main" class="logo">LD</a>
+        <nav class="main-nav" id="mainNav">
+            <a href="#main">Main</a><a href="#about">About me</a><a href="#skills">Skills</a><a href="#portfolio">Portfolio</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-grid" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span><span></span></button>
+    </header>
+
+    <aside class="section-dots" id="sectionDots" aria-label="Section navigation"></aside>
+
+    <main>
+        <section id="main" class="panel hero active-section">
+            <div class="topo topo-tr"></div><div class="topo topo-bl"></div>
+            <div class="hero-content reveal">
+                <div class="hero-stack"><span class="block-text">BI</span></div>
+                <div class="hero-stack"><span class="script neon">Developer</span></div>
+                <h1>Writer<br><span>on Medium</span></h1>
+                <p>👩‍💻 BI Developer by day, 📝 Medium writer on weekends, 🎨 UI Designer in my free time. Balancing data, words, and pixels with a side of humor!</p>
+            </div>
+            <footer class="socials">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luchiana.dumitrescu25@gmail.com" target="_blank"><img src="assets/logos/email.png" alt="Email me" /></a>
+                <a href="https://www.linkedin.com/in/elena-luchiana-dumitrescu/" target="_blank"><img src="assets/logos/linkedin.png" alt="Linkedin" /></a>
+                <a href="https://github.com/ElenaD25" target="_blank"><img src="assets/logos/github.png" alt="GitHub" /></a>
+                <a href="https://medium.com/@luchianadumitrescu" target="_blank"><img src="assets/logos/medium.png" alt="Medium" /></a>
+                <a href="https://public.tableau.com/app/profile/luchiana.dumitrescu/vizzes" target="_blank"><img src="assets/logos/tableau.png" alt="Tableau" /></a>
+            </footer>
+        </section>
+
+        <section id="about" class="panel about">
+            <div class="shape-cards"><span></span><span></span><span></span><em>Nice to meet</em><strong class="neon">YOU</strong></div>
+            <div class="section-copy reveal">
+                <p class="ghost-title">About me</p><h2><span>Some stuff</span> about me</h2>
+                <p>I’m a BI Developer, but I see myself more as a data storyteller and tech creator. My thing is taking complex concepts and turning them into something simple, visual, and human.</p>
+                <p>I started writing in 2023 with a single Medium article. That small step turned into momentum, two major contributions to #WomenInTechnology and #CodeLikeAGirl, and a growing voice in the data and tech space.</p>
+                <p>Now, I build, write, and experiment: BI dashboards, SQL and Python projects, Data ideas and Visual storytelling, Designs in Figma.</p>
+                <p class="mini">Hobbies: 🧤 ✣ ✍ 📖 🏊</p>
+            </div>
+            <footer class="socials">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luchiana.dumitrescu25@gmail.com" target="_blank"><img src="assets/logos/email.png" alt="Email me" /></a>
+                <a href="https://www.linkedin.com/in/elena-luchiana-dumitrescu/" target="_blank"><img src="assets/logos/linkedin.png" alt="Linkedin" /></a>
+                <a href="https://github.com/ElenaD25" target="_blank"><img src="assets/logos/github.png" alt="GitHub" /></a>
+                <a href="https://medium.com/@luchianadumitrescu" target="_blank"><img src="assets/logos/medium.png" alt="Medium" /></a>
+                <a href="https://public.tableau.com/app/profile/luchiana.dumitrescu/vizzes" target="_blank"><img src="assets/logos/tableau.png" alt="Tableau" /></a>
+            </footer>
+        </section>
+
+        <section id="skills" class="panel skills">
+            <div class="page-head reveal"><p class="ghost-title">Skills</p><h2>What I <span>Bring to the Table</span></h2></div>
+            <div class="skills-grid reveal" id="skillsGrid"></div>
+            <div class="learning reveal"><h3>⭐ Currently learning</h3><div class="chips"><span>BigQuery</span><span>dbt</span><span>Looker</span></div><small>⭐ Always learning. Always building.</small></div>
+        </section>
+
+        <section id="portfolio" class="panel portfolio">
+            <div class="page-head reveal"><p class="ghost-title">Portfolio</p><h2>Share with you <span>my recent works</span></h2></div>
+            <div class="tabs reveal" id="portfolioTabs"></div>
+            <div class="carousel reveal">
+                <button class="arrow" id="prevProject" aria-label="Previous project">←</button>
+                <div class="cards" id="projectCards"></div>
+                <button class="arrow" id="nextProject" aria-label="Next project">→</button>
+            </div>
+        </section>
+
+        <section id="blog" class="panel blog">
+            <div class="page-head reveal"><p class="ghost-title">Blog</p><h2>Latest <span>Crazy ideas worth noting down</span></h2></div>
+            <div class="blog-layout reveal" id="blogGrid"></div>
+        </section>
+
+        <section id="contact" class="panel contact">
+            <div class="topo topo-tr big"></div><div class="topo topo-bl big"></div>
+            <div class="page-head reveal"><p class="ghost-title">Contact</p><h2><span>Be bold</span> and let’s connect</h2></div>
+            <div class="contact-grid reveal">
+                <div class="contact-list">
+                    <h4>Get in Touch (I don’t bite):</h4>
+                    <p><a href="mailto:luchiana.dumitrescu25@gmail.com"><img src="assets/logos/email.png" alt="Email me"/>  luchiana.dumitrescu25@gmail.com</a></p>
+                    <p><a href="https://www.linkedin.com/in/elena-luchiana-dumitrescu" target="_blank"><img src="assets/logos/linkedin.png" alt="Linkedin" />  linkedin.com/in/elena-luchiana-dumitrescu</a></p>
+                    <h4>Where I share my creations:</h4>
+                    <p><a href="https://github.com/ElenaD25" target="_blank"><img src="assets/logos/github.png" alt="GitHub"/>  github.com/ElenaD25</a></p>
+                    <p><a href="https://medium.com/@luchianadumitrescu" target="_blank"><img src="assets/logos/medium.png" alt="Medium" />  medium.com/@luchianadumitrescu</a></p>
+                    <h4>If you enjoy my work and writing, consider buying me a coffee ☕👇 </h4>
+                    <a class="coffee" href="https://ko-fi.com/luchianadumitrescu" target="_blank">☕ Buy me a coffee</a>
+                </div>
+                <figure class="profile-card"><img src="assets/img/profile.png" alt="Elena Luchiana Dumitrescu"><figcaption>Meet the person behind the projects 👋</figcaption></figure>
+            </div>
+        </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
