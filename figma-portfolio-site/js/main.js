@@ -9,19 +9,25 @@ let offset = 0;
 const tabs = $('#portfolioTabs');
 tabs.innerHTML = Object.keys(PROJECTS).map(k => `<button data-tab="${k}">${k}</button>`).join('');
 
-function renderProjects(){
-  $$('#portfolioTabs button').forEach(b=>b.classList.toggle('active', b.dataset.tab===activeCategory));
-  const list = PROJECTS[activeCategory];
-  const ordered = [...list.slice(offset), ...list.slice(0, offset)];
-    $('#projectCards').innerHTML = ordered.map(p => `<article class="project-card"><img src="${p.img}" alt="${p.title}"><div><h3>${p.title}</h3><p>${p.description}</p><small>Skills: ${p.skills}</small></div></article>`).join('');
+function renderProjects() {
+    $$('#portfolioTabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === activeCategory));
+    const list = PROJECTS[activeCategory];
+    const ordered = [...list.slice(offset), ...list.slice(0, offset)];
+    $('#projectCards').innerHTML = ordered.map(p => `<article class="project-card"><img src="${p.img}" alt="${p.title}"><div><h3>${p.title}</h3><p>${p.description}</p><small>Skills: ${p.skills}</small>
+    <a href="${p.link}" target="_blank" class="link-btn">click here</a>
+    </div></article>`).join('');
 }
 
 tabs.addEventListener('click', e => { if(e.target.matches('button')){activeCategory=e.target.dataset.tab; offset=0; renderProjects();}});
 $('#nextProject').onclick = () => { offset = (offset + 1) % PROJECTS[activeCategory].length; renderProjects(); };
 $('#prevProject').onclick = () => { offset = (offset - 1 + PROJECTS[activeCategory].length) % PROJECTS[activeCategory].length; renderProjects(); };
+//renderProjects(); 
+
+$('#blogGrid').innerHTML = BLOGS.map(b => `<article class="article-card ${b.featured ? 'featured' : ''}"><img src="${b.img}" alt="${ b.title }"><div><h3>${b.title}</h3><p>${b.descr}</p><a href="${ b.link }" target="_blank" class="link-btn">Read here</a></div></article>`).join('');
+$$('.reveal').forEach(el => el.classList.add('in'));
+
 renderProjects(); 
 
-$('#blogGrid').innerHTML = BLOGS.map(b => `<article class="article-card ${b.featured?'featured':''}"><img src="${b.img}" alt="${b.title}"><div><h3>${b.title}</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Replace this with your article summary.</p></div></article>`).join('');
 
 const sections = $$('section.panel');
 const dots = $('#sectionDots');
