@@ -14,7 +14,7 @@ function renderProjects() {
     const list = PROJECTS[activeCategory];
     const ordered = [...list.slice(offset), ...list.slice(0, offset)];
     $('#projectCards').innerHTML = ordered.map(p => `<article class="project-card"><img src="${p.img}" alt="${p.title}"><div><h3>${p.title}</h3><p>${p.description}</p><small>Skills: ${p.skills}</small>
-    <a href="${p.link}" target="_blank" class="link-btn">click here</a>
+    <a href="${p.link}" target="_blank" class="link-btn">View here</a>
     </div></article>`).join('');
 }
 

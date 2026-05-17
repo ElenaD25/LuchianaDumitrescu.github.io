@@ -14,15 +14,85 @@ const PROJECTS = {
   //  {title:'UI Concept 3', img:'assets/img/projects-3.png', skills:'Dashboard UI, Product thinking'}
   //],
   Reporting: [
-        { title: 'Report 1', img: 'assets/reporting/ai_adoption.jpg', description: 'bcusdhclsiuhflwlehf fyugeslifblseukyflbwes fiweusygfclsief', skills: 'SQL, Tableau, Data Prep', link:'https://medium.com/your-article-2'},
-        { title: 'Report 2', img: 'assets/reporting/recycle.jpg', description: 'bcusdhclsiuhflwlehf e43454756fses fiweusygfclsief', skills: 'Power BI, KPI design', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 3', img: 'assets/reporting/remote_work.jpg', description: 'bcusdhclsiuhflwlehf fyug6564yflbwes fi66464lsief', skills: 'SQL, Power Query, Storytelling', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 4', img: 'assets/reporting/romania-pe-roti.jpg', description: '...', skills: 'Python, ETL', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 5', img: 'assets/reporting/romanian-sky.jpg', description: '...', skills: 'Power BI, DAX', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 6', img: 'assets/reporting/robots_overview_dash.png', description: '...', skills: 'SQL Optimization', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 7', img: 'assets/reporting/uefa-2024.jpg', description: '...', skills: 'Data Modeling', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 8', img: 'assets/reporting/olimpic_games.jpg', description: '...', skills: 'Dashboard Design', link: 'https://medium.com/your-article-2' },
-        { title: 'Report 9', img: 'assets/reporting/bold-bi.jpg', description: '...', skills: 'Analytics Engineering', link: 'https://medium.com/your-article-2' }
+        {
+          title: 'AI Without Borders: A Global View of Openness',
+          img: 'assets/reporting/ai_adoption.jpg',
+          description: `This time, it’s all about AI — the big enemy for some, a supportive ally for others. But to truly understand how people feel about AI, 
+           we need to do what we do best: analyze the data and uncover insights that might not be obvious at first glance.<br><br>
+           <b>First place in the RomanianDATA Tribe May 2025 data visualization challenge.</b>`,
+          skills: 'Plotly, Polars, Storytelling, Data Cleaning, Storytelling, Data Cleaning',
+          link: 'https://github.com/ElenaD25/RomanianData-Tribe--May-2025-Challenge'
+    },
+        {
+            title: 'Dandelion of Returns: Packaging per Person, 2025',
+            img: 'assets/reporting/recycle.jpg',
+            description: `Dashboard to visualize packaging per person across Romanian counties. Each golden tip in the dandelion chart represents a county’s contribution <br><br>
+            The dandelion metaphor shows that while a few counties dominate, every seed matters in building a sustainable circular system.<br>`,
+            skills: 'Plotly, Polars, Storytelling, Data Cleaning, Data visualization',
+            link: 'https://www.linkedin.com/posts/elena-luchiana-dumitrescu_romaniandata-romaniandatatribe-datavisualization-activity-7370520549405593600-3ua6/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADEVf44BsL-pZy8pfz891H29JWwO18yEXdw'
+        },
+        {
+            title: 'Remote work in Europe: Still a living dream?',
+            img: 'assets/reporting/remote_work.jpg',
+            description: `This dashboard compares remote work reporting rates across European countries between 2022 and 2024,
+            highlighting how adoption has changed over time. It shows country-by-country trends.<br> <br>
+            <b>First place in the RomanianDATA Tribe Aug 2025 data visualization challenge.</b>`,
+            skills: 'Plotly, Polars, Storytelling, Data Cleaning, Data visualization',
+            link: 'https://github.com/ElenaD25/RomanianData-Tribe-August-2025-Challenge'
+        },
+        {
+            title: 'Romania on wheels: what type of fuel dominates?',
+            img: 'assets/reporting/romania-pe-roti.jpg',
+            description: `This analysis explores the distribution of vehicle fuel types across Romania by county, highlighting regional patterns and dominant fuel preferences. <br>
+            Insight: Traditional fuels still dominate the landscape, but the shift toward alternative energy sources is gradually emerging.<br><br>`,
+            skills: 'Tableau, Polars, Excel, Storytelling, Data Cleaning, Data visualization',
+            link: 'https://public.tableau.com/app/profile/luchiana.dumitrescu/viz/Romaniaperoti-RomanianDataTribechallengeApril2026/Romniaperoi'
+        },
+        {
+            title: 'RoMotion - Romania in Motion',
+            img: 'assets/reporting/romanian-sky.jpg',
+            description: `This analysis turns flight statistics into a visual overview of the country’s airports.
+            Otopeni leads with 7.3M + international and 477K domestic flights, while Cluj and Iași emerge as strong regional hubs.
+            Over 85 % of international traffic is concentrated in just three airports, highlighting strong centralization but also clear potential for regional expansion.`,
+            skills: 'Tableau, Polars, Excel, Storytelling, Data Cleaning, Data visualization',
+            link: 'https://public.tableau.com/app/profile/luchiana.dumitrescu/viz/RoMotion-RomaniainMotion/Dashboard1'
+        },
+        {
+            title: 'Robots Overview and Process Insights',
+            img: 'assets/reporting/robots_overview_dash.png',
+            description: `This dashboard provides a comprehensive overview of RPA robot activity and process performance,
+            helping monitor operational efficiency, workload distribution, execution success rates, and robot utilization. <br> <br>
+            The dashboard is designed to support operational monitoring, capacity planning, bottleneck detection, and optimization of the RPA infrastructure.`,
+            skills: 'Power BI, Polars, Data Cleaning, Data visualization, Data Modeling',
+            link: 'https://medium.com/your-article-2'
+        },
+        {
+            title: `Romania''s Road to Euro 2024`,
+            img: 'assets/reporting/uefa-2024.jpg',
+            description: `EURO 2024 has officially kicked off, and Romania is celebrating a strong start.
+            As part of the excitement, the Romanian Football Federation launched a data challenge for the tournament, which was enthusiastically joined by data enthusiasts, including myself.
+            It was a great opportunity to explore football data and bring insights to life through visualization.`,
+            skills: 'Tableau, Polars, Excel, Storytelling, Data Cleaning, Data visualization',
+            link: 'https://public.tableau.com/app/profile/luchiana.dumitrescu/viz/UEFAEuro2024-Romania/Dashboard1'
+        },
+        {
+            title: 'Olympic Games - Summer & Winter| Romania',
+            img: 'assets/reporting/olimpic_games.jpg',
+            description: `Countdown to the Olympic Games! <br> >br>
+            With the Olympic Games approaching, the RomanianDATA Tribe continues the momentum by launching a new monthly data challenge,
+            bringing together data enthusiasts to explore fresh datasets, build engaging visualizations, and uncover meaningful insights through data storytelling.`,
+            skills: 'Tableau,Polars, Excel, Storytelling, Data Cleaning, Data visualization ',
+            link: 'https://public.tableau.com/app/profile/luchiana.dumitrescu/viz/Olympics_Dash_17212536655420/OlympicGames-SummerWinterRomania'
+        },
+        {
+            title: 'Netflix - Overview Analysis',
+            img: 'assets/reporting/netflix-pbi.jpg',
+            description: `This analysis explores Netflix’s evolution from 2010 to 2021 visualized in Power BI. 
+            It presents key insights such as total content volume, the balance between movies and TV shows, rating distributions, and genre popularity. The report also highlights top producing countries, most active directors, and average viewing durations,
+            offering a comprehensive overview of Netflix content trends and audience engagement.`,
+            skills: 'Power BI, Excel, Storytelling, Data Cleaning, Data visualization',
+            link: 'https://github.com/ElenaD25/PowerBI-projects/blob/main/Netflix-README.md'
+        }
 
   ]
   //,EDA: [
