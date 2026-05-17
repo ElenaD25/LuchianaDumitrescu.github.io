@@ -7,7 +7,7 @@ skillsGrid.innerHTML = SKILLS.map(group => `<article class="skill-box"><h3>${gro
 let activeCategory = 'Reporting';
 let offset = 0;
 const tabs = $('#portfolioTabs');
-tabs.innerHTML = Object.keys(PROJECTS).map(k => `<button data-tab="${k}">${k}</button>`).join('');
+/*tabs.innerHTML = Object.keys(PROJECTS).map(k => `<button data-tab="${k}">${k}</button>`).join('');*/
 
 function renderProjects() {
     $$('#portfolioTabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === activeCategory));

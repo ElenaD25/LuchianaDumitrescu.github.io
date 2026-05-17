@@ -336,10 +336,10 @@ a {
 }
 
 .skill-box, .learning {
-    background: linear-gradient(115deg,#02070d,#06131f 72%,#02101e);
+    background: #1A1B1B; /*linear-gradient(115deg,#02070d,#06131f 72%,#02101e);*/
     border-top: 1px solid var(--line);
     padding: 12px 18px;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0 18px 50px #0005
 }
 
@@ -423,7 +423,7 @@ a {
     grid-template-columns: repeat(3,1fr);
     display: flex;
     gap: 32px;
-    overflow: hidden; /* important */
+    overflow: hidden;
 }
 
 .project-card, .article-card {
@@ -433,6 +433,13 @@ a {
     box-shadow: 0 18px 40px #0005;
     transition: .25s;
     flex: 0 0 calc((100% - 64px) / 3);
+
+    /*    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 18px 40px #0005;
+    transition: .25s;
+    flex: 0 0 calc((100% - 64px) / 3);*/
 }
 
     .project-card:hover, .article-card:hover {
@@ -598,8 +605,19 @@ a {
         grid-row: auto
     }
 
-    .cards {
-        grid-template-columns: 1fr
+/*    .cards {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        overflow: visible;
+    }*/
+
+    .project-card,
+    .article-card {
+        flex: 0 0 100%;
+    }
+
+    .carousel {
+        grid-template-columns: 1fr;
     }
 
     .carousel {
@@ -607,7 +625,12 @@ a {
     }
 
     .arrow {
-        display: none
+        /*display: none*/
+        border: 0;
+        background: transparent;
+        color: var(--accent);
+        font-size: 36px;
+        cursor: pointer
     }
 
     .hero h1 {
@@ -624,5 +647,10 @@ a {
 
     .project-card img {
         height: 240px
+    }
+
+    .block-text {
+        transform:translateY(-45px);
+        font-size: 95px;
     }
 }

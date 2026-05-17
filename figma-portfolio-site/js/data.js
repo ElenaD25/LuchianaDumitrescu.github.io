@@ -1,10 +1,10 @@
 const SKILLS = [
   { title:'BI & Analytics Tools', icon:'📊', items:['Power BI','Tableau','Excel'] },
-  { title:'Data Analysis', icon:'🧪', items:['Polars','Jupyter','Anaconda','Pandas','Matplotlib'] },
-  { title:'Data Engineering & Databases', icon:'🗄️', items:['T-SQL','MySQL','Oracle SQL','PostgreSQL','SQL Server','IBM Informix'] },
+    { title: 'Data Analysis', icon: '🧪', items: ['Polars', 'Matplotlib', 'Plotly'] },
+    { title: 'Data Engineering & Databases', icon: '🗄️', items: ['Oracle SQL', 'IBM Informix', 'SQL Server','MySQL','PostgreSQL'] },
   { title:'ETL & Data Integration', icon:'⚙️', items:['Data Factory','Pentaho','Power Query'] },
   { title:'Environment & Dev Tools', icon:'🛠️', items:['Visual Studio','Jupyter Notebook','GitHub','Anaconda','VS Code'] },
-  { title:'Communication & Content', icon:'✒️', items:['Technical Writer','Medium','Storytelling','Data Visualisation','Business-Technical Liaison'] }
+  { title:'Communication & Content', icon:'✒️', items:['Technical Writer','Storytelling','Data Visualisation','Business-Technical Liaison'] }
 ];
 
 const PROJECTS = {
